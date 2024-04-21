@@ -24,7 +24,7 @@ const getProducts = async (query: Query): Promise<Product[]> => {
     const res = await fetch(url);
 
     if(!res.ok) {
-        throw new Error("Failed to fetch categories");
+        throw new Error("Failed to fetch products");
     }
     
     return res.json();

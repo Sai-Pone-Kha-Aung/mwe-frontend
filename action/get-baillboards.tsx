@@ -6,7 +6,7 @@ const getBillboards = async (id: string): Promise<Billboard> => {
     const res = await fetch(`${URL}/${id}`);
 
     if(!res.ok) {
-        throw new Error("Failed to fetch categories");
+        throw new Error("Failed to fetch billboard");
     }
     
     return res.json();

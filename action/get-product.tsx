@@ -6,7 +6,7 @@ const getProduct = async (id: string): Promise<Product> => {
     const res = await fetch(`${URL}/${id}`);
 
     if(!res.ok) {
-        throw new Error("Failed to fetch categories");
+        throw new Error("Failed to fetch product");
     }
     
     return res.json();
